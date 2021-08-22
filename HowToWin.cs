@@ -18,7 +18,8 @@ public class HowToWin : MonoBehaviour
         if ((kare1.material = beyaz) && (kare2.material = beyaz))
         {
 
-            {}
+            StartCoroutine(deneme1());
+
         }
 
 
@@ -38,6 +39,14 @@ public class HowToWin : MonoBehaviour
         
 
     }   
+    
+    IEnumerator deneme1()
+    {
+
+         return new WaitWhile(() => Input.GetKeyDown(KeyCode.Space));
+       
+
+    }
         
     
 
