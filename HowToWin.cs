@@ -6,7 +6,7 @@ using TMPro;
 public class HowToWin : MonoBehaviour
 {
     public MeshRenderer kare1, kare2,tebrikyazisi1;
-    public GameObject küp1, küp2;
+    public GameObject kÃ¼p1, kÃ¼p2;
     public TextMeshPro tebrikyazisi;
     private MeshRenderer ressam;
     public Material sari, kirmizi, yesil, mavi, pembe, beyaz;
@@ -18,7 +18,7 @@ public class HowToWin : MonoBehaviour
         if ((kare1.material = beyaz) && (kare2.material = beyaz))
         {
 
-            { }
+            return;
         }
 
 
@@ -46,15 +46,15 @@ public class HowToWin : MonoBehaviour
     {
 
 
-        küp1.SetActive(false);
-        küp2.SetActive(false);
+        kÃ¼p1.SetActive(false);
+        kÃ¼p2.SetActive(false);
         tebrikyazisi1.enabled = true;
 
         Debug.Log("tebrikler");
         yield return new WaitForSeconds(3);
         Debug.Log("Coroutine");
-        küp1.SetActive(true);
-        küp2.SetActive(true);
+        kÃ¼p1.SetActive(true);
+        kÃ¼p2.SetActive(true);
         tebrikyazisi1.enabled = false;
         Renkver();
 
