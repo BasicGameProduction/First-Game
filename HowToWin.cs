@@ -18,7 +18,7 @@ public class HowToWin : MonoBehaviour
         if ((kare1.material = beyaz) && (kare2.material = beyaz))
         {
 
-            return;
+            {}
         }
 
 
