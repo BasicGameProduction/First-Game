@@ -43,7 +43,7 @@ public class HowToWin : MonoBehaviour
     IEnumerator deneme1()
     {
 
-         return new WaitWhile(() => Input.GetKeyDown(KeyCode.Space));
+         return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
        
 
     }
